@@ -1,6 +1,16 @@
 # TP1 - HTTP
 El siguiente repositorio es un esqueleto basico para la implementeacion de una API utilizando express.js. 
 
+## Instalar
+Previamente, se necesitaran los siguiente programas para el desarrollo del TP
+- Visual Studio Code (O cualquier otro editor de codigo)
+- Postman
+- Node.js
+- Git
+  
+La instalacion de cada uno de estos (sobre todo Node.js y Git) dependen del Sistema Operativo. Consultar
+al docente en caso de duda.
+
 ## Prerequisitos
 En caso de hace un fork y clonar este repositorio, para poder levantar la API debe primero correr los siguientes comandos
 ```bash
