@@ -1,10 +1,16 @@
 const express = require('express');
 const cors = require('cors');
 const path = require('path'); // Import path module
+const bodyParser = require('body-parser');
+
 
 
 const app = express();
-const port = 3000;
+const port = 80;
+
+// Middleware para analizar el cuerpo de las solicitudes entrantes
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
 
 // Allow all cross-origin requests
 app.use(cors());
@@ -24,14 +30,24 @@ app.use(express.static(path.join(__dirname, 'public')));
  * Business
 ****************************************/
 
-app.get('/players', async (req, res) => {
+app.get('/hola', async (req, res) => {
   try{
-    
+    res.status(200).send({"msg": "HOLA"})
     }catch(e){
       res.status(500).send({'error': 'Internal server error'})
     }
 })
 
+
+app.post('/jugador', async (req, res) => {
+  try{
+    res.status(200).send({
+      "recibi": req.body
+    })
+  }catch(e){
+    res.status(500).send({'error': 'Internal server error'})
+  }
+})
 
 
 app.get('/boom', async (req, res) => {
