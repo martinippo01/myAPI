@@ -2,7 +2,7 @@
 El siguiente repositorio es un esqueleto basico para la implementeacion de una API utilizando express.js. 
 
 ## Prerequisitos
-En caso de clonar este repositorio, para poder levantar la API debe primero correr los siguientes comandos
+En caso de hace un fork y clonar este repositorio, para poder levantar la API debe primero correr los siguientes comandos
 ```bash
 npm install
 node .
