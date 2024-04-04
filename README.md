@@ -15,6 +15,7 @@ Luego
 ```
 npm install express
 npm install cors
+npm install body-parser
 node .
 ```
 Tener cuidado de que el puerto configurado en el archivo index.js no este en uso. En dicho caso, modificar el puerto o terminar el otro proceso que utilice el puerto.
