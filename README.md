@@ -30,6 +30,44 @@ node .
 ```
 Tener cuidado de que el puerto configurado en el archivo index.js no este en uso. En dicho caso, modificar el puerto o terminar el otro proceso que utilice el puerto.
 
+Asegurarse tener el archivo .gitconfig con lo siguiente:
+```
+# Dependency directories
+node_modules/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Environment variables file
+.env
+
+# Log files
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor files
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw*
+
+# IDE folders
+.idea/
+```
+
+En caso de no poder realizar commits desde Visual Studio Code, abrir la terminal y ejecutar los siguientes comandos, remplazando el mail y usuario por los de su cuenta de GitHub:
+```bash
+git config --global user.name "Your Name"
+git config --global user.email "your.email@example.com"
+```
+
+
 ## API
 Abrir el archivo index.js.
 
