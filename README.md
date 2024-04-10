@@ -15,7 +15,6 @@ al docente en caso de duda.
 En caso de hace un fork y clonar este repositorio, para poder levantar la API debe primero correr los siguientes comandos
 ```bash
 npm install
-node .
 ```
 En caso de querer crear el repositorio desde cero, se debe: (Utilizar las configuraciones default.)
 ```bash
@@ -26,7 +25,6 @@ Luego
 npm install express
 npm install cors
 npm install body-parser
-node .
 ```
 Tener cuidado de que el puerto configurado en el archivo index.js no este en uso. En dicho caso, modificar el puerto o terminar el otro proceso que utilice el puerto.
 
@@ -67,8 +65,13 @@ git config --global user.name "Your Name"
 git config --global user.email "your.email@example.com"
 ```
 
+## Ejecutar la API
+Para ejecutar la API, luego de haber cumplido los requisitos, se hace simplemente con el comando:
+```bash
+node .
+```
 
-## API
+## Modificar la API
 Abrir el archivo index.js.
 
 Para modificar/crear los diversos endpoints de la API, utilizar el siguiente formato:
